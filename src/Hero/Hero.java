@@ -1,7 +1,7 @@
 package Hero;
 public class Hero {
-	String name;
-	int hp;
+	public String name;
+	public int hp;
 
 	public void sleep() {
 		this.hp = 100;
@@ -23,7 +23,7 @@ public class Hero {
 	public void run() {
 		System.out.println(this.name+"は、逃走した");
 		System.out.println("うまく逃げ切れた");
-		System.out.println("HP:"+this.hp);
+		System.out.println("残りのHP:"+this.hp);
 	}
 
 }
