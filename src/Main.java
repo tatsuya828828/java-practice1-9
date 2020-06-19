@@ -21,28 +21,20 @@ public class Main {
 		a.name = "しょぼい斧";
 		a.attack = 20;
 
-		// 勇者を作成
-		Hero h = new Hero();
-
 		// 勇者の名前入力とHPの設定
 		System.out.println("名前を入力してください");
-		h.name = new Scanner(System.in).nextLine();
-		h.hp = new Random().nextInt(50)+100;
+		String userName = new Scanner(System.in).nextLine();
+		Hero h = new Hero(userName);
 		System.out.println("勇者"+h.name+"、HP:"+h.hp+"を生み出しました");
-
 		h.sword = s;
 		System.out.println(h.sword.name+"を装備しました");
 
 		// 戦士の作成
 		Warrior warrior = new Warrior();
-		warrior.name = "たかし";
-		warrior.hp = 200;
 		warrior.axe = a;
 
 		// 魔法使いの作成
 		Wizard w = new Wizard();
-		w.name = "ウィッチ";
-		w.hp = 50;
 
 		System.out.println("戦士"+warrior.name+"と、魔法使い"+w.name+"が仲間になった！");
 
