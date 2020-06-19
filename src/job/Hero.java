@@ -1,4 +1,4 @@
-package hero;
+package job;
 
 import weapon.Sword;
 
