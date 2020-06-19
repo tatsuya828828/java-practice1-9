@@ -1,7 +1,11 @@
-package Hero;
+package hero;
+
+import weapon.Sword;
+
 public class Hero {
 	public String name;
 	public int hp;
+	public Sword sword;
 
 	public void sleep() {
 		this.hp = 100;

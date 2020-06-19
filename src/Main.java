@@ -1,15 +1,20 @@
-import Hero.Hero;
-import Villain.Matango;
+import java.util.Random;
+import java.util.Scanner;
+
+import hero.Hero;
+import villain.Matango;
+
 
 public class Main {
 	public static void main(String[] args) {
-		// 1.勇者を作成
+
+		// 勇者を作成
 		Hero h = new Hero();
 
-		// 2.勇者の名前入力とHPの設定
+		// 勇者の名前入力とHPの設定
 		System.out.println("名前を入力してください");
-		h.name = new java.util.Scanner(System.in).nextLine();
-		h.hp = new java.util.Random().nextInt(50)+100;
+		h.name = new Scanner(System.in).nextLine();
+		h.hp = new Random().nextInt(50)+100;
 		System.out.println("勇者"+h.name+"、HP:"+h.hp+"を生み出しました");
 
 		// モンスターの作成
@@ -17,7 +22,7 @@ public class Main {
 		int[] monster = new int[num];
 		for(int i=1; i<monster.length; i++) {
 			Matango m= new Matango();
-			m.hp = new java.util.Random().nextInt(9)+50;
+			m.hp = new Random().nextInt(9)+50;
 			m.suffix = i;
 			System.out.println("おばけきのこ"+m.suffix+" HP:"+m.hp);
 		}

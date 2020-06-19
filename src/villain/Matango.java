@@ -1,4 +1,4 @@
-package Villain;
+package villain;
 
 public class Matango {
 	public int hp;
